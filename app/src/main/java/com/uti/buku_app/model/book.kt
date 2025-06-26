@@ -36,6 +36,14 @@ data class Book(
                 R.drawable.book_1984,
                 200000
             ),
+            Book(
+                4,
+                "Pride and Prejudice",
+                "Jane Austen",
+                "The story follows the main character Elizabeth Bennet as she deals with issues of manners, upbringing, morality, education, and marriage.",
+                R.drawable.book_pride,
+                175000
+            ),
             )
     }
 }
