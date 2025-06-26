@@ -23,7 +23,6 @@ class EditProfileActivity : AppCompatActivity() {
         emailInput = findViewById(R.id.emailInput)
         phoneInput = findViewById(R.id.phoneInput)
 
-        // Get current user from SharedPreferences
         val username = getSharedPreferences("UserPrefs", MODE_PRIVATE)
             .getString("username", null)
 
