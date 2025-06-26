@@ -28,7 +28,14 @@ data class Book(
                 R.drawable.book_mockingbird,
                 180000
             ),
-
+            Book(
+                3,
+                "1984",
+                "George Orwell",
+                "A dystopian novel set in a totalitarian society where critical thought is suppressed.",
+                R.drawable.book_1984,
+                200000
+            ),
             )
     }
 }
