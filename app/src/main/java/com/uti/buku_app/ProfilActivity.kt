@@ -1,20 +1,63 @@
 package com.uti.buku_app
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
+import android.view.MenuItem
+import android.widget.TextView
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import androidx.core.view.ViewCompat
-import androidx.core.view.WindowInsetsCompat
+import com.uti.buku_app.database.DatabaseHelper
+
 
 class ProfilActivity : AppCompatActivity() {
+    private lateinit var dbHelper: DatabaseHelper
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_profil)
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
+
+        setSupportActionBar(findViewById(R.id.toolbar))
+        supportActionBar?.setDisplayHomeAsUpEnabled(true)
+
+        dbHelper = DatabaseHelper(this)
+
+        // Get username from SharedPreferences
+        val prefs = getSharedPreferences("UserPrefs", MODE_PRIVATE)
+        val username = prefs.getString("username", "") ?: ""
+
+        // Load user data from database
+        val user = dbHelper.getUserProfile(username)
+        if (user != null) {
+            // Set user data to views
+            findViewById<TextView>(R.id.nameText).text = user.name
+            findViewById<TextView>(R.id.emailText).text = user.email
+            findViewById<TextView>(R.id.phoneText).text = user.phone
+        } else {
+            Toast.makeText(this, "Failed to load profile data", Toast.LENGTH_SHORT).show()
+        }
+
+
+    }
+
+    override fun onResume() {
+        super.onResume()
+        // Refresh profile data when returning from EditProfileActivity
+        val prefs = getSharedPreferences("UserPrefs", MODE_PRIVATE)
+        val username = prefs.getString("username", "") ?: ""
+        val user = dbHelper.getUserProfile(username)
+        if (user != null) {
+            findViewById<TextView>(R.id.nameText).text = user.name
+            findViewById<TextView>(R.id.emailText).text = user.email
+            findViewById<TextView>(R.id.phoneText).text = user.phone
+        }
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem): Boolean {
+        return when (item.itemId) {
+            android.R.id.home -> {
+                onBackPressed()
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
         }
     }
 }
