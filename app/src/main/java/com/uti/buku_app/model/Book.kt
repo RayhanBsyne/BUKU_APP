@@ -2,14 +2,14 @@ package com.uti.buku_app.model
 
 import com.uti.buku_app.R
 
-data class Book(
+class Book (
     val id: Int,
     val title: String,
     val author: String,
     val description: String,
     val imageResId: Int,
     val price: Int
-) {
+){
     companion object {
         val dummyBooks = listOf(
             Book(
@@ -76,6 +76,6 @@ data class Book(
                 R.drawable.book_alchemist,
                 210000
             )
-            )
+        )
     }
 }
