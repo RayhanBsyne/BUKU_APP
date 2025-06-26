@@ -20,6 +20,15 @@ data class Book(
                 R.drawable.book_gatsby,
                 250000
             ),
-        )
+            Book(
+                2,
+                "To Kill a Mockingbird",
+                "Harper Lee",
+                "The story of racial injustice and the loss of innocence in the American South.",
+                R.drawable.book_mockingbird,
+                180000
+            ),
+
+            )
     }
 }
