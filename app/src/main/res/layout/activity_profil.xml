@@ -37,6 +37,14 @@
         android:src="@drawable/ic_launcher_foreground"
         android:layout_gravity="center"
         android:layout_marginBottom="32dp"/>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="24dp"
+            app:cardCornerRadius="8dp"
+            app:cardElevation="4dp">
+        </com.google.android.material.card.MaterialCardView>
     </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
