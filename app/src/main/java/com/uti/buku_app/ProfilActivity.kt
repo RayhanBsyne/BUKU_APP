@@ -1,10 +1,12 @@
 package com.uti.buku_app
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.android.material.button.MaterialButton
 import com.uti.buku_app.database.DatabaseHelper
 
 
@@ -34,7 +36,9 @@ class ProfilActivity : AppCompatActivity() {
         } else {
             Toast.makeText(this, "Failed to load profile data", Toast.LENGTH_SHORT).show()
         }
-
+        findViewById<MaterialButton>(R.id.editProfileButton).setOnClickListener {
+            startActivity(Intent(this, EditProfileActivity::class.java))
+        }
 
     }
 
