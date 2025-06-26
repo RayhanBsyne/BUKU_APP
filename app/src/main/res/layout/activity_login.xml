@@ -80,10 +80,6 @@
                 android:padding="12dp"
                 style="@style/Widget.MaterialComponents.Button.OutlinedButton"/>
 
-
-
-
-
         </LinearLayout>
 
     </androidx.core.widget.NestedScrollView>
