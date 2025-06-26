@@ -12,4 +12,7 @@
     <color name="secondary">#FF03DAC5</color>
     <color name="secondary_variant">#FF018786</color>
 
+    <color name="background">#FFFFFFFF</color>
+    <color name="surface">#FFFFFFFF</color>
+    <color name="error">#FFB00020</color>
 </resources>
