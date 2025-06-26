@@ -41,7 +41,8 @@ class LoginActivity : AppCompatActivity() {
                     .putString("username", username)
                     .apply()
 
-                Toast.makeText(this, "Login successful", Toast.LENGTH_SHORT).show()
+                startActivity(Intent(this, BookListActivity::class.java))
+                finish()
             } else {
                 Toast.makeText(this, "Invalid username or password", Toast.LENGTH_SHORT).show()
             }
