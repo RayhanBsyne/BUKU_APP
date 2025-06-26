@@ -22,14 +22,12 @@ class ProfilActivity : AppCompatActivity() {
 
         dbHelper = DatabaseHelper(this)
 
-        // Get username from SharedPreferences
         val prefs = getSharedPreferences("UserPrefs", MODE_PRIVATE)
         val username = prefs.getString("username", "") ?: ""
 
-        // Load user data from database
         val user = dbHelper.getUserProfile(username)
         if (user != null) {
-            // Set user data to views
+
             findViewById<TextView>(R.id.nameText).text = user.name
             findViewById<TextView>(R.id.emailText).text = user.email
             findViewById<TextView>(R.id.phoneText).text = user.phone
@@ -44,7 +42,7 @@ class ProfilActivity : AppCompatActivity() {
 
     override fun onResume() {
         super.onResume()
-        // Refresh profile data when returning from EditProfileActivity
+
         val prefs = getSharedPreferences("UserPrefs", MODE_PRIVATE)
         val username = prefs.getString("username", "") ?: ""
         val user = dbHelper.getUserProfile(username)
