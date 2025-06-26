@@ -41,11 +41,15 @@ class EditProfileActivity : AppCompatActivity() {
             val email = emailInput.text.toString()
             val phone = phoneInput.text.toString()
 
-            if (name.isEmpty() || email.isEmpty() || phone.isEmpty()) {
-                Toast.makeText(this, "Please fill all fields", Toast.LENGTH_SHORT).show()
-                return@setOnClickListener
+            if (username != null) {
+                val result = dbHelper.updateUserProfile(username, name, email, phone)
+                if (result > 0) {
+                    Toast.makeText(this, "Profile updated successfully", Toast.LENGTH_SHORT).show()
+                    finish()
+                } else {
+                    Toast.makeText(this, "Failed to update profile", Toast.LENGTH_SHORT).show()
+                }
             }
-
 
             }
         }
