@@ -32,8 +32,12 @@ class BookListActivity : AppCompatActivity() {
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
+            R.id.action_profile -> {
+                startActivity(Intent(this, ProfilActivity::class.java))
+                true
+            }
             R.id.action_logout -> {
-                // Clear user session
+
                 getSharedPreferences("UserPrefs", MODE_PRIVATE)
                     .edit()
                     .clear()
