@@ -60,6 +60,14 @@ data class Book(
                 R.drawable.book_catcher,
                 195000
             ),
+            Book(
+                7,
+                "Lord of the Flies",
+                "William Golding",
+                "A novel about a group of British boys stranded on an uninhabited island and their disastrous attempt to govern themselves.",
+                R.drawable.book_flies,
+                185000
+            ),
             )
     }
 }
