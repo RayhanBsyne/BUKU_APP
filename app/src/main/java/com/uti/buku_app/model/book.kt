@@ -44,6 +44,14 @@ data class Book(
                 R.drawable.book_pride,
                 175000
             ),
+            Book(
+                5,
+                "The Hobbit",
+                "J.R.R. Tolkien",
+                "The story of Bilbo Baggins, a hobbit who embarks on an epic adventure.",
+                R.drawable.book_hobbit,
+                275000
+            ),
             )
     }
 }
