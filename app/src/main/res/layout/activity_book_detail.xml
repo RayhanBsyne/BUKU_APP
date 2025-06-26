@@ -81,6 +81,16 @@
                 android:textSize="16sp"
                 android:layout_marginBottom="32dp"/>
 
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/orderButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/whatsapp_green"
+                android:text="Order via WhatsApp"
+                android:drawableStart="@android:drawable/ic_menu_send"
+                android:drawablePadding="8dp"
+                android:padding="16dp"/>
+
 
 
         </LinearLayout>
