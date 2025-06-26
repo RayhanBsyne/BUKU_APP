@@ -14,7 +14,6 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var usernameInput: TextInputEditText
     private lateinit var passwordInput: TextInputEditText
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
@@ -36,6 +35,7 @@ class LoginActivity : AppCompatActivity() {
             }
 
             if (dbHelper.loginUser(username, password)) {
+
                 getSharedPreferences("UserPrefs", MODE_PRIVATE)
                     .edit()
                     .putString("username", username)
