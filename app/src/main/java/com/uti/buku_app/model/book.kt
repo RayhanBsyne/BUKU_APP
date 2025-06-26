@@ -52,6 +52,14 @@ data class Book(
                 R.drawable.book_hobbit,
                 275000
             ),
+            Book(
+                6,
+                "The Catcher in the Rye",
+                "J.D. Salinger",
+                "The story of Holden Caulfield's experiences in New York City after being expelled from prep school.",
+                R.drawable.book_catcher,
+                195000
+            ),
             )
     }
 }
