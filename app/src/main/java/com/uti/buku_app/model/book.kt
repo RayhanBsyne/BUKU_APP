@@ -68,6 +68,14 @@ data class Book(
                 R.drawable.book_flies,
                 185000
             ),
+            Book(
+                8,
+                "The Alchemist",
+                "Paulo Coelho",
+                "The story of a young shepherd named Santiago who dreams of finding a worldly treasure.",
+                R.drawable.book_alchemist,
+                210000
+            )
             )
     }
 }
