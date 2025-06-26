@@ -57,6 +57,16 @@
                 android:textSize="18sp"
                 android:layout_marginBottom="16dp"/>
 
+            <TextView
+                android:id="@+id/bookPrice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:textColor="?attr/colorPrimary"
+                android:textStyle="bold"
+                android:layout_marginBottom="24dp"/>
+
+
 
         </LinearLayout>
         </LinearLayout>
