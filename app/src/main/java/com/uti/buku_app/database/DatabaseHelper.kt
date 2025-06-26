@@ -1,5 +1,6 @@
 package com.uti.buku_app.database
 
+import android.content.ContentValues
 import android.content.Context
 import android.database.sqlite.SQLiteDatabase
 import android.database.sqlite.SQLiteOpenHelper
@@ -54,6 +55,7 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         cursor.close()
         return exists
     }
+
     fun getUserProfile(username: String): user? {
         val db = this.readableDatabase
         val cursor = db.query(
@@ -78,6 +80,20 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
             null
         }.also { cursor.close() }
     }
+        fun updateUserProfile(username: String, name: String, email: String, phone: String): Int {
+            val db = this.writableDatabase
+            val values = ContentValues().apply {
+                put(COLUMN_NAME, name)
+                put(COLUMN_EMAIL, email)
+                put(COLUMN_PHONE, phone)
+            }
+            return db.update(
+                TABLE_USERS,
+                values,
+                "$COLUMN_USERNAME = ?",
+                arrayOf(username)
+            )
+        }
 
 
-}
+    }
