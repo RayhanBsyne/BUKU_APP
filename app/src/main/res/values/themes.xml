@@ -17,6 +17,9 @@
         <item name="colorOnBackground">@color/on_background</item>
         <item name="colorOnSurface">@color/on_surface</item>
 
+        <item name="colorError">@color/error</item>
+        <item name="colorOnError">@color/on_error</item>
+
     </style>
 
     <style name="Theme.BukuApp" parent="Base.Theme.BukuApp" />
