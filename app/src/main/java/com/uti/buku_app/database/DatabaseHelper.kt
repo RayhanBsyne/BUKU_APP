@@ -40,6 +40,18 @@ class DatabaseHelper(context: Context) : SQLiteOpenHelper(context, DATABASE_NAME
         onCreate(db)
     }
 
+    fun registerUser(username: String, password: String, name: String, email: String, phone: String): Long {
+        val db = this.writableDatabase
+        val values = ContentValues().apply {
+            put(COLUMN_USERNAME, username)
+            put(COLUMN_PASSWORD, password)
+            put(COLUMN_NAME, name)
+            put(COLUMN_EMAIL, email)
+            put(COLUMN_PHONE, phone)
+        }
+        return db.insert(TABLE_USERS, null, values)
+    }
+
     fun loginUser(username: String, password: String): Boolean {
         val db = this.readableDatabase
         val cursor = db.query(
