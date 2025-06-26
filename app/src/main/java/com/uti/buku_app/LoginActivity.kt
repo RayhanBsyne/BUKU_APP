@@ -1,5 +1,6 @@
 package com.uti.buku_app
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Toast
@@ -14,6 +15,7 @@ class LoginActivity : AppCompatActivity() {
     private lateinit var usernameInput: TextInputEditText
     private lateinit var passwordInput: TextInputEditText
 
+    @SuppressLint("UseKtx")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
