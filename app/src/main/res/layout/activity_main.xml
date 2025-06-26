@@ -18,6 +18,4 @@
             app:title="Book Store" />
 
     </com.google.android.material.appbar.AppBarLayout>
-
-
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
