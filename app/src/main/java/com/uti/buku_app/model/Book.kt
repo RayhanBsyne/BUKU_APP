@@ -91,6 +91,7 @@ class Book (
                 "",
                 R.drawable.book_negeri5negara,
                 0
+            )
 
         )
     }
