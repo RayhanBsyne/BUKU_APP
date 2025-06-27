@@ -83,7 +83,15 @@ class Book (
                 "Harry Potter and the Cursed Child is a stage play and the official continuation of the Harry Potter saga, set 19 years after the events of the final book.",
                 R.drawable.book_thecursed,
                 25000000
-            )
+            ),
+            Book(
+                10,
+                "",
+                "",
+                "",
+                R.drawable.book_negeri5negara,
+                0
+
         )
     }
 }
