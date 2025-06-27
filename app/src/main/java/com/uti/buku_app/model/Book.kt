@@ -80,9 +80,9 @@ class Book (
                 9,
                 "Harry Potter and the Cursed Child",
                 "J.K. Rowling",
-                "",
+                "Harry Potter and the Cursed Child is a stage play and the official continuation of the Harry Potter saga, set 19 years after the events of the final book.",
                 R.drawable.book_thecursed,
-                0
+                25000000
             )
         )
     }
