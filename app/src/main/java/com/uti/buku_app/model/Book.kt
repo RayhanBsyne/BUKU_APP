@@ -87,7 +87,7 @@ class Book (
             Book(
                 10,
                 "The Land of Five Towers",
-                "",
+                "A. Fuadi",
                 "",
                 R.drawable.book_negeri5negara,
                 0
