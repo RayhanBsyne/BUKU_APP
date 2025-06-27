@@ -78,7 +78,7 @@ class Book (
             ),
             Book(
                 9,
-                "",
+                "Harry Potter and the Cursed Child",
                 "",
                 "",
                 R.drawable.book_thecursed,
