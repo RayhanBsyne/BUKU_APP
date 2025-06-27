@@ -94,8 +94,8 @@ class Book (
             ),
             Book(
                 11,
-                "The Land of Five Towers",
-                "",
+                "The Alchemist",
+                "Paulo Coelho",
                 "",
                 R.drawable.book_alchemist,
                 0
