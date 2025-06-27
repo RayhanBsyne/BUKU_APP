@@ -79,7 +79,7 @@ class Book (
             Book(
                 9,
                 "Harry Potter and the Cursed Child",
-                "",
+                "J.K. Rowling",
                 "",
                 R.drawable.book_thecursed,
                 0
