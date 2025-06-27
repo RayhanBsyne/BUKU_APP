@@ -96,9 +96,9 @@ class Book (
                 11,
                 "The Alchemist",
                 "Paulo Coelho",
-                "",
+                "The Alchemist is an allegorical novel by Paulo Coelho, first published in Portuguese in 1988.",
                 R.drawable.book_alchemist,
-                0
+                150000
             )
         )
     }
