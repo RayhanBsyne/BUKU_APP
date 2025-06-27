@@ -75,6 +75,14 @@ class Book (
                 "The story of a young shepherd named Santiago who dreams of finding a worldly treasure.",
                 R.drawable.book_alchemist,
                 210000
+            ),
+            Book(
+                9,
+                "",
+                "",
+                "",
+                R.drawable.book_thecursed,
+                0
             )
         )
     }
