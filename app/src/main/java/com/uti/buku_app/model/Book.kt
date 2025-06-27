@@ -88,9 +88,9 @@ class Book (
                 10,
                 "The Land of Five Towers",
                 "A. Fuadi",
-                "",
+                "Negeri 5 Menara is an inspiring novel based on the true story of Alif, a young man from Maninjau, West Sumatra, Indonesia.",
                 R.drawable.book_negeri5negara,
-                0
+                190000
             )
 
         )
