@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import com.google.android.material.button.MaterialButton
 import com.uti.buku_app.database.DatabaseHelper
 
-
 class ProfilActivity : AppCompatActivity() {
     private lateinit var dbHelper: DatabaseHelper
 
@@ -27,17 +26,16 @@ class ProfilActivity : AppCompatActivity() {
 
         val user = dbHelper.getUserProfile(username)
         if (user != null) {
-
             findViewById<TextView>(R.id.nameText).text = user.name
             findViewById<TextView>(R.id.emailText).text = user.email
             findViewById<TextView>(R.id.phoneText).text = user.phone
         } else {
             Toast.makeText(this, "Failed to load profile data", Toast.LENGTH_SHORT).show()
         }
+
         findViewById<MaterialButton>(R.id.editProfileButton).setOnClickListener {
             startActivity(Intent(this, EditProfileActivity::class.java))
         }
-
     }
 
     override fun onResume() {
@@ -56,7 +54,7 @@ class ProfilActivity : AppCompatActivity() {
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
         return when (item.itemId) {
             android.R.id.home -> {
-                onBackPressed()
+                finish() // menggantikan onBackPressed() agar tidak deprecated
                 true
             }
             else -> super.onOptionsItemSelected(item)
