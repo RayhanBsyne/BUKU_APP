@@ -126,8 +126,8 @@ class Book (
             ),
             Book(
                 15,
-                "",
-                "",
+                "Percy Jackson & The Olympians: The Lightning Thief (Book 1)",
+                "Rick Riordan",
                 " ",
                 R.drawable.book_jackson,
                 0
