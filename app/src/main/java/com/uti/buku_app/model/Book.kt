@@ -104,9 +104,9 @@ class Book (
                 12,
                 "The Lord of the Rings: The Two Towers",
                 "J.R.R. Tolkien",
-                "",
+                "The Two Towers is the second volume of J.R.R. Tolkien's renowned fantasy epic, The Lord of the Rings. Following the shattering of the Fellowship, the narrative splits into two main, intertwined storylines.",
                 R.drawable.book_lordring,
-                0
+                150000
             )
         )
     }
