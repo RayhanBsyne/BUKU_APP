@@ -166,8 +166,8 @@ class Book (
             ),
             Book(
                 20,
-                "",
-                "",
+                "The Da Vinci Code",
+                " Dan Brown",
                 "",
                 R.drawable.book_danbrown,
                 0
