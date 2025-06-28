@@ -142,8 +142,8 @@ class Book (
             ),
             Book(
                 17,
-                " ",
-                " ",
+                "The Old Man and the Sea",
+                "Ernest Hemingway",
                 " ",
                 R.drawable.book_ernes,
                 0
