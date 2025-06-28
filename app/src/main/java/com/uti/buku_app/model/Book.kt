@@ -107,6 +107,14 @@ class Book (
                 "The Two Towers is the second volume of J.R.R. Tolkien's renowned fantasy epic, The Lord of the Rings. Following the shattering of the Fellowship, the narrative splits into two main, intertwined storylines.",
                 R.drawable.book_lordring,
                 150000
+            ),
+            Book(
+                13,
+                "Kim Ji-yeong",
+                "",
+                "",
+                R.drawable.book_chonam,
+                0
             )
         )
     }
