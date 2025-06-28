@@ -136,9 +136,9 @@ class Book (
                 16,
                 "Percy Jackson & The Olympians: The Lightning Thief ",
                 "Rick Riordan",
-                ".",
+                "The Lightning Thief is the first novel in the Percy Jackson & The Olympians series by Rick Riordan, published in 2005. The story introduces Percy Jackson, a twelve-year-old boy with ADHD and dyslexia, who constantly finds himself in trouble.",
                 R.drawable.book_warstrom,
-                0
+                170000
             )
         )
     }
