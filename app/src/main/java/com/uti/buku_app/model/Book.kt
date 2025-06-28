@@ -147,6 +147,14 @@ class Book (
                 "The Old Man and the Sea is a novella by American author Ernest Hemingway, published in 1952. It tells the epic struggle between an aging, experienced Cuban fisherman, Santiago, and a giant marlin. For 84 days, Santiago has caught no fish, leading many to believe he is salao, the unluckiest of all.",
                 R.drawable.book_ernes,
                 150000
+            ),
+            Book(
+                18,
+                "",
+                "",
+                " ",
+                R.drawable.book_nightwatch,
+                0
             )
         )
     }
