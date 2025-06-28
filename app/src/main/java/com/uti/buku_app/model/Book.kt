@@ -118,8 +118,8 @@ class Book (
             ),
             Book(
                 14,
-                "",
-                "",
+                "Susan Hill",
+                "The Woman in Black",
                 "",
                 R.drawable.book_black,
                 0
