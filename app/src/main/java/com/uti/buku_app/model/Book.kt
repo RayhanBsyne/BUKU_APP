@@ -111,10 +111,10 @@ class Book (
             Book(
                 13,
                 "Kim Ji-yeong",
-                "",
-                "",
+                "Cho Nam-joo",
+                "Kim Ji-yeong, Born 1982 is a South Korean novel by Cho Nam-joo that sparked widespread discussion and became a global phenomenon.",
                 R.drawable.book_chonam,
-                0
+                100000
             )
         )
     }
