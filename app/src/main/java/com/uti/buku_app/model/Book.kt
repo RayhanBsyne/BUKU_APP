@@ -123,6 +123,14 @@ class Book (
                 "The Woman in Black is a chilling gothic ghost story written by Susan Hill, first published in 1983. The novel is framed as the memoir of Arthur Kipps, a retired solicitor who is recounting a terrifying experience from his youth. ",
                 R.drawable.book_black,
                 160000
+            ),
+            Book(
+                15,
+                "",
+                "",
+                " ",
+                R.drawable.book_jackson,
+                0
             )
         )
     }
