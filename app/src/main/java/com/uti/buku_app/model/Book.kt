@@ -168,9 +168,9 @@ class Book (
                 20,
                 "The Da Vinci Code",
                 " Dan Brown",
-                "",
+                "The Da Vinci Code is a mystery thriller novel by Dan Brown, published in 2003. It follows Robert Langdon, a Harvard symbologist, and Sophie Neveu, a French cryptologist, as they investigate a murder in the Louvre Museum. The investigation leads them into a frantic chase through Paris and London, uncovering a series of cryptic clues hidden in Leonardo da Vinci's works",
                 R.drawable.book_danbrown,
-                0
+                180000
             )
         )
     }
