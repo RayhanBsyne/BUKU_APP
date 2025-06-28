@@ -158,8 +158,8 @@ class Book (
             ),
             Book(
                 19,
-                "",
-                "",
+                "Persuasion",
+                "Jane Austen",
                 "",
                 R.drawable.book_persuasion,
                 0
