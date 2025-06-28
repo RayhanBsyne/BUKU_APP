@@ -105,7 +105,7 @@ class Book (
                 "",
                 "",
                 "",
-                R.drawable.book_lordrings,
+                R.drawable.book_lordring,
                 0
             )
         )
