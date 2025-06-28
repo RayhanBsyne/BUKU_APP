@@ -102,8 +102,8 @@ class Book (
             ),
             Book(
                 12,
-                "",
-                "",
+                "The Lord of the Rings: The Two Towers",
+                "J.R.R. Tolkien",
                 "",
                 R.drawable.book_lordring,
                 0
