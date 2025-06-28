@@ -150,8 +150,8 @@ class Book (
             ),
             Book(
                 18,
-                "",
-                "",
+                "Night Watch",
+                "Jayne Anne Phillips",
                 " ",
                 R.drawable.book_nightwatch,
                 0
