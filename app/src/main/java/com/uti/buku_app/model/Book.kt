@@ -163,6 +163,14 @@ class Book (
                 "Persuasion is Jane Austen's last completed novel, published posthumously in 1817. It tells the story of Anne Elliot, a gentle and intelligent young woman who, at nineteen, was persuaded by her family and a dear friend to break off her engagement to the ambitious but then-poor naval officer Frederick Wentworth.",
                 R.drawable.book_persuasion,
                 500000
+            ),
+            Book(
+                20,
+                "",
+                "",
+                "",
+                R.drawable.book_danbrown,
+                0
             )
         )
     }
