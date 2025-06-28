@@ -152,9 +152,9 @@ class Book (
                 18,
                 "Night Watch",
                 "Jayne Anne Phillips",
-                " ",
+                "Night Watch is a Pulitzer Prize-winning novel by Jayne Anne Phillips. Set shortly after the American Civil War, the novel centers on a West Virginia asylum that houses traumatized war veterans, displaced women, and orphaned children.",
                 R.drawable.book_nightwatch,
-                0
+                100000
             )
         )
     }
