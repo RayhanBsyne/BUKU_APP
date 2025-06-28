@@ -99,6 +99,14 @@ class Book (
                 "The Alchemist is an allegorical novel by Paulo Coelho, first published in Portuguese in 1988.",
                 R.drawable.book_alchemist,
                 150000
+            ),
+            Book(
+                12,
+                "",
+                "",
+                "",
+                R.drawable.book_lordrings,
+                0
             )
         )
     }
